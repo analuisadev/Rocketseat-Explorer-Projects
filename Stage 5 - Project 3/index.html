@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Calculadora de IMC</title>
+
+</head>
+
+<body>
+    <div class="alert-error">
+        Digite somente números
+    </div>
+
+    <div class="container">
+        <main class="card">
+            <form>
+                <h1 class="title">Cálculo de IMC</h1>
+                <div class="input-wrapper">
+                    <label for="weight">Peso (kg)</label>
+                    <input id="weight" type="text" placeholder="60">
+                </div>
+
+                <div class="input-wrapper open">
+                    <label for="height">Altura (cm)</label>
+                    <input id="height" type="text" placeholder="165">
+                </div>
+
+                <button type="submit">Calcular IMC <i class="ph ph-arrow-right"></i></button>
+        </main>
+    </div>
+
+    <div class="modal-wrapper">
+        <div class="modal card">
+            <h2 class="title">
+                <button id="close"><i class="ph ph-x"></i></button>
+
+                <span>Seu IMC é de 28</span>
+            </h2>
+        </div>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+
+</html>

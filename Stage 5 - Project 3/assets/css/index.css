@@ -1,0 +1,134 @@
+@import url(global.css);
+
+.container {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+.card {
+    padding: 4.8rem 6.4rem 6.4rem;
+    background-color: var(--White);
+    max-width: 42.8rem;
+    margin-inline: auto;
+    box-shadow: .0rem .2rem .4rem rgba(0, 0, 0, 0.1);
+    border-radius: .6rem;
+}
+
+.title {
+    font-size: 3.2rem;
+    line-height: .4rem;
+}
+
+form {
+    width: 30rem;
+}
+
+form h1 {
+    margin-bottom: 3.2rem;
+    color: var(--Title-Text-Color);
+}
+
+form label {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--Label-Text-Color);
+    margin-bottom: .8rem;
+    display: block;
+}
+
+form input {
+    width: 100%;
+    border: .1rem solid var(--Input-Border);
+    background: var(--Bg-Input);
+    padding: 1.6rem;
+    border-radius: .4rem;
+}
+
+form input:focus {
+    outline: .2rem solid var(--Bg-Outline-Input-Button);
+}
+
+form input::placeholder {
+    color: var(--Placeholder);
+}
+
+.input-wrapper+.input-wrapper {
+    margin-top: 1.6rem;
+}
+
+form button {
+    margin-top: 3.2rem;
+    padding: 1.6rem;
+    width: 100%;
+    border: 0;
+    background: var(--Bg-Outline-Input-Button);
+    color: var(--White);
+    font-weight: bold;
+    border-radius: .4rem;
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+    align-items: center;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+form button:hover {
+    background: var(--Bg-Button-Hover);
+}
+
+.modal-wrapper.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-wrapper {
+    position: absolute;
+    inset: 0; /* Hack para diminuir o top, bottom, left e right como 0 */
+    background: rgba(0, 0, 0, 0.7);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+}
+
+.modal button {
+    background: none;
+    border: 0;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.modal button:hover {
+    transform: scale(1.1);
+}
+
+.alert-error.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.alert-error {
+    background: var(--Bg-Error);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: var(--White);
+    padding: .8rem 0;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-3.0rem);
+    transition: transform .5s;
+}
