@@ -23,8 +23,7 @@ form.onsubmit = (e) => {
 }
 
 const showResultMessage = (result) => {
-    const message = `Seu IMC é de ${result}`
-    Modal.IMCResult.innerText = message
+    Modal.IMCResult.innerText = `Seu IMC é de ${result}`
     Modal.openModal()
 
 }
