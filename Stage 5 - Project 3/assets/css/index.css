@@ -21,7 +21,8 @@ h1 {
     margin-bottom: 1.6rem;
 }
 
-h1, p {
+h1,
+p {
     color: var(--Text-Color);
 }
 
@@ -31,7 +32,8 @@ form {
     justify-content: center;
 }
 
-input, button {
+input,
+button {
     border: 0;
     padding: 1.6rem;
 }
@@ -52,7 +54,7 @@ button {
 }
 
 button:hover {
-   background: var(--Bg-Button-Hover);
+    background: var(--Bg-Button-Hover);
 }
 
 .hide {
