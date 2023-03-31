@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Primary-Linear-Gradient: #C2E9FB;
+    --Secondary-Linear-Gradient: #A1F4FD;
+    --White: #FFFFFF;
+    --Box-Shadow: rgba(0, 0, 0, 0.1);
+    --Text-Color: #34355B;
+    --Bg-Input: #DCE2E9;
+    --Bg-Button: #7879F1;
+    --Bg-Button-Hover: #6363ce;
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 1.6rem;
+    background: linear-gradient(287.56deg, var(--Primary-Linear-Gradient) 0%, var(--Secondary-Linear-Gradient) 100%);
+}
